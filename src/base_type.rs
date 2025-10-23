@@ -311,7 +311,7 @@ mod test {
     }
 
     #[test]
-    #[should_panic(message="static strings used as atom is invalid")]
+    #[should_panic(expected="static string used as atom is invalid")]
     fn distinct_validators() {
         let _xa = Atom::from("x");
         let _xn = AlphaNum::from("x");
